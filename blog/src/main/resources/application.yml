@@ -1,3 +1,9 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /blog
+
+
 spring:
   application:
     name: blog
@@ -7,3 +13,8 @@ spring:
     url: jdbc:mysql://localhost:3307/blog
     username: root
     password: 1234
+
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
